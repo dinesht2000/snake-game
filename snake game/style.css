@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Open Sans,'sans-serif';
+}
+body{
+    background: #e6f5fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.board{
+    width: 405px;
+    height: 445px;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    background: #2e3d51;
+    border-radius: 5px;
+}
+.scoreboard{
+    color: #c1ccdb;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 40px;
+
+}
+.area{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template: repeat(30,13.5px)/repeat(30,13.5px);
+    background: #252d3f;
+
+}
+.area .food{
+    background: rgb(223, 38, 38);
+    border-radius: 50%;
+}
+.area .snakehead{
+    background: rgb(14, 168, 239);
+    border-radius: 50%;
+}
